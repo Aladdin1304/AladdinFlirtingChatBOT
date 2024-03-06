@@ -11,8 +11,13 @@ body {
   body {
     background-color: #87cefa; /* Light Sky Blue for mobile */
     background-image: url(formobile.jpeg);
-    background-size: cover ; 
+    background-size: cover; 
     background-repeat: repeat;
+  }
+
+  .chat-container {
+    max-width: 100%;
+    margin: 30px auto; /* Adjusted margin-top to leave space at the upper side for mobile */
   }
 }
 
@@ -26,7 +31,7 @@ body {
 
 .chat-container {
   max-width: 400px;
-  margin: 50px auto;
+  margin: 125px auto; /* Default margin for desktop */
   background-color: #87cefad3; /* Light Sky Blue */
   border-radius: 90px;
   box-shadow: 0 0 1000px rgb(0, 106, 255);
@@ -84,21 +89,5 @@ button:hover {
 @media screen and (max-width: 600px) {
   body {
     font-size: 14px;
-  }
-
-  .chat-container {
-    max-width: 100%;
-    margin: 10px;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
