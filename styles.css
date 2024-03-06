@@ -1,0 +1,104 @@
+/* Default styles for all screens */
+body {
+  font-family: Arial, sans-serif;
+  margin: 1;
+  padding: 1;
+  color: #fffffff3;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #87cefa; /* Light Sky Blue for mobile */
+    background-image: url(formobile.jpeg);
+    background-size: cover ; 
+    background-repeat: repeat;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 601px) {
+  body {
+    background-color: #add8e6; /* Light Blue for desktop */
+    background-image: url(desktop.jpg); /* Replace with your desktop background image URL */
+  }
+}
+
+.chat-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #87cefad3; /* Light Sky Blue */
+  border-radius: 90px;
+  box-shadow: 0 0 1000px rgb(0, 106, 255);
+  overflow: hidden;
+  padding: 20px;
+  opacity: 1;
+  transition: all 1s;
+  color: rgb(255, 254, 254);
+}
+
+.chat-container:hover {
+  box-shadow: 0 0 50px rgb(255, 1, 1);
+  opacity: 0.9;
+  border-radius: 5px;
+  background-color: #ffffffca;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  color: #0091ff; /* Blue */
+  animation: fadeInUp 1s ease-out; /* Add animation to the heading */
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  margin: 10px;
+  border: 0.5px solid #4169e1; /* Royal Blue */
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(43, 126, 165, 0.689);
+}
+
+input:hover {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgb(0, 149, 255); /* Blue */
+}
+
+button {
+  width: 25%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #4169e1; /* Royal Blue */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-radius: 60px;
+  background-color: #0089cd; /* Medium Blue */
+  box-shadow: 0 0 10px rgb(10, 141, 255);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .chat-container {
+    max-width: 100%;
+    margin: 10px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
